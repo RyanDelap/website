@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Ryan Delap Development</title>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <video autoplay playsinline loop muted id="video">
+            <source src="loop.mp4" type="video/mp4">
+        </video>
+        <audio src="song.mp3" id="audio" loop="" autoplay=""></audio>
+
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" height="360" width="360">
+            </div>
+            <div class="icons">
+                <div class="icon" id="github" style="display:none;">
+                    <a href="https://github.com/RyanDelap"><img src="github.svg"> </a>
+                </div>
+                <div class="icon" id="twitter" style="display:none;">
+                    <a href="https://twitter.com/Ryan_Delap"><img src="twitter.svg"> </a>
+                </div>
+                <div class="icon" id="email" style="display:none;">
+                    <a href="mailto:contact@ryandelap.me"><img src="email.svg"> </a>
+                </div>
+                <div class="icon" id="steam" style="display:none;">
+                    <a href="https://steamcommunity.com/id/staxcsgo"><img src="steam.svg"> </a>
+                </div>
+                <div class="icon" id="linkedin" style="display:none;">
+                    <a href="https://www.linkedin.com/in/ryandelap/"><img src="linkedin.svg"> </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+           $("#github").fadeIn(1000);
+           $("#twitter").fadeIn(2000);
+           $("#email").fadeIn(3000);
+           $("#steam").fadeIn(4000);
+           $("#linkedin").fadeIn(5000);
+           setTimeout(function() {
+                $('.container').addClass('slideIn');
+           }, 300);
+        });
+    </script>
+</html>

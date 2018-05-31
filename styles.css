@@ -1,0 +1,53 @@
+video#video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+}
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 50%;
+}
+.icon {
+    display: inline-block;
+    text-align: center;
+}
+.icon img {
+    height: 64px;
+    width: 64px;
+    padding: 5px;
+}
+
+.icons {
+    display: inline-block;
+    background-color: rgba(47, 44, 44, 0.66);
+    border-radius: 15px;
+    margin-top: 100px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-200%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.slideIn {
+  animation: slideIn 2s;
+  opacity: 1 !important;
+}
